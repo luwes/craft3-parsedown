@@ -13,6 +13,7 @@ namespace luwes\parsedown\twigextensions;
 use luwes\parsedown\Parsedown;
 
 use Craft;
+use craft\helpers\Template;
 
 /**
  * Twig can be extended in many ways; you can add extra tags, filters, tests, operators,
@@ -81,9 +82,13 @@ class ParsedownTwigExtension extends \Twig_Extension
 	{
 		if ($parseAs == 'line')
 		{
-			return Parsedown::$plugin->parsedown->parseLine($text);
+			$parsed = Parsedown::$plugin->parsedown->parseLine($text);
+		}
+		else
+		{
+			$parsed = Parsedown::$plugin->parsedown->parseText($text);
 		}
 
-		return Parsedown::$plugin->parsedown->parseText($text);
+		return Template::raw($parsed);
 	}
 }
