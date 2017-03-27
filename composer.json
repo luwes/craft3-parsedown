@@ -35,8 +35,6 @@
         "name": "Parsedown",
         "handle": "parsedown",
         "schemaVersion": "1.0.0",
-        "hasSettings": false,
-        "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/luwes/craft3-parsedown/master/CHANGELOG.md",
         "components": {
             "parsedownService": "luwes\\parsedown\\services\\ParsedownService"
