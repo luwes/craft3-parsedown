@@ -2,7 +2,7 @@
     "name": "luwes/craft3-parsedown",
     "description": "Adds Parsedown, the PHP Markdown parser to Craft CMS.",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
@@ -23,7 +23,7 @@
     ],
     "require": {
         "craftcms/cms": "^3.0.0-beta.1",
-        "erusev/parsedown": "^1.6",
+        "erusev/parsedown": "^1.7.1",
         "erusev/parsedown-extra": "^0.7.1"
     },
     "autoload": {
@@ -34,7 +34,7 @@
     "extra": {
         "name": "Parsedown",
         "handle": "parsedown",
-        "schemaVersion": "1.0.0",
+        "schemaVersion": "1.0.1",
         "changelogUrl": "https://raw.githubusercontent.com/luwes/craft3-parsedown/master/CHANGELOG.md",
         "components": {
             "parsedownService": "luwes\\parsedown\\services\\ParsedownService"
