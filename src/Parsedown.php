@@ -76,8 +76,8 @@ class Parsedown extends Plugin
 		]);
 
 		// Add in our Twig extensions
-		Craft::$app->view->twig->addExtension(new ParsedownTwigExtension());
-		Craft::$app->view->twig->addExtension(new ParsedownExtraTwigExtension());
+		Craft::$app->view->registerTwigExtension(new ParsedownTwigExtension());
+		Craft::$app->view->registerTwigExtension(new ParsedownExtraTwigExtension());
 
 		// Do something after we're installed
 		Event::on(
